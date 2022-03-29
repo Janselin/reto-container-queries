@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+
+.body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    container-name: body;
+    container-type: inline-size;
+   
+}
+
+.card {
+    margin: 30px;
+    border: 3px solid rgb(206, 205, 205);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 200px auto;
+    max-width: 1000px;
+    min-width: 630px
+    height: 271px;
+    padding: 0.8em 0px;
+    container-name: card;
+    container-type: inline-size;
+}
+
+/* .card__img {
+    
+} */
+
+.card__cody {
+    border-radius: 63%;
+    grid-column: 1 / 2;
+    margin: auto;
+    
+}
+
+.card__header {
+    grid-column: 2 / -1;
+    justify-self: start;
+    
+}
+
+.card__content {
+    grid-area: 2 / 2 / 3 / -1;
+    margin-top: -84px;
+    
+}
+
+.card__p {
+    font-size: 0.8em;
+    color: rgb(144, 144, 146);
+    margin-bottom: 0.8em;
+    padding-left: 9px;
+}
+
+.card__h2 {
+    margin-bottom: 0.8em;
+    font-size: 0.9em;
+    color: rgb(55, 49, 75);
+}
+
+.card__h1 {
+    margin-bottom: 0.7em;
+    font-size: 1.4em;
+}
+
+.card__link {
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+
+
+@container body  (max-width: 550px) {
+  
+    .card {
+        padding-left: 1em;
+        grid-template-columns: 115px auto;
+        grid-template-rows: 160px auto;
+        /* padding: 0.4em; */
+        
+
+    }
+    
+}
+@container card  (max-width: 500px) {
+  
+   
+
+    .card__cody {
+    margin: auto auto 1.7em 0;
+}
+   
+    .card__header {
+        grid-column: 2 / -1;
+        justify-self: baseline;
+        padding: 1em 0 0 1em;}
+
+    .card__p {
+        margin-bottom: 0.5em;
+    }
+    .card__h1 {
+    font-size: 1.3em;
+    }
+
+    .card__content {
+    grid-column: 1 / -1;
+    grid-row: 2/ -1;
+    margin-top: 0;
+    }
+
+    .card__h2 {
+        font-size: 0.8em;
+        }
+
+}
+
+/* @container body (min-width: 630px) {
+    .card {
+        padding-left: 1em;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 160px auto;
+    }
+}
+
+@container card  (min-width: 630px) {
+    
+    .card__cody {
+        width: 30%
+    }
+} */
