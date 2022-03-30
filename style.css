@@ -7,42 +7,43 @@
     font-size: 1.4em;
     container-name: body;
     container-type: inline-size;
-   
+    background-color: #f4f2f2;
 }
 
 .header {
     margin-top: 1em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: #444444;
-    background: #FFFFFF;
+    width: 100%;
+    text-align: center;
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    
 }
-
 .header__img {
-    width: 41%;
+    width: 22%;
+   
 }
 .header__p {
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: 700;
-    margin-top: 1em;
-
+    padding-top: 1em;
 }
 
 .card {
     margin: 30px;
     border: 2px solid rgb(206, 205, 205);
     border-radius: 12px;
+    background-color: white;
     display: grid;
     grid-template-columns: 300px auto;
     grid-template-rows: 200px auto;
-    max-width: 1000px;   
+    max-width: 1000px;
     height: 271px;
     padding: 0.8em 0px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  
 }
 
 
@@ -91,12 +92,17 @@
 
 
 @container body  (max-width:630px) {
-  
+    
+   
+    .header__p {
+        font-size: 1.3em;
+    }
     .card {
         padding-left: 1em;
         grid-template-columns: 115px auto;
         grid-template-rows: 140px auto;
-        height: 257px;}
+        height: 257px;
+        }
     
 
     .card__cody {
